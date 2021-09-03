@@ -1,9 +1,9 @@
 "use strict";
 
-const dotenv = require("dotenv").config();
-if(dotenv.error) {
-  throw dotenv.error
-}
+// const dotenv = require("dotenv").config();
+// if(dotenv.error) {
+//   throw dotenv.error
+// }
 
 
 const SECRET_KEY = process.env.SECRET_KEY || "secret-dev";
