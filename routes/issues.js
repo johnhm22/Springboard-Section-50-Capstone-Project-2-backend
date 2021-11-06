@@ -39,9 +39,11 @@ router.patch("/:user/add", async function(req, res, next){
         return next(err);
     }
     try{
+    console.log("Inside route to add issue on backend");
     const issue = await Issue.addIssue(req.params.user, req.body);
     return res.json(issue)
     } catch(err){
+        console.log("inside error for addIssue backend route")
         return next(err);
     }
 })

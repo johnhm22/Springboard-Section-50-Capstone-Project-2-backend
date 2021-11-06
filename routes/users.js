@@ -41,7 +41,8 @@ try{
 });
 
 
-router.post("/register", async function(req, res, next){   
+router.post("/register", async function(req, res, next){  
+    console.log("inside register route");
     const result = jsonschema.validate(req.body, registerSchema);
     if(!result.valid){
         const listOfErrors = result.errors.map(e => e.stack);
