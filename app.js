@@ -6,7 +6,7 @@ const issueRoutes = require('./routes/issues');
 const userRoutes = require('./routes/users');
 
 
-app.use(cors({origin: "https://managemyproperty.surge.sh", credentials: true}));
+app.use(cors());
 app.use(express.json());
 
   
